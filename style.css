@@ -11,12 +11,7 @@
 .hero {
   height: 100vh;
   background-color: black;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
     url("https://s3-alpha-sig.figma.com/img/a719/db31/8544fa3c134093ef9a0961c20a01dfdf?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N~aF6vzpayXVWgB3AgjRFissIaVtSPsQp-VqKq3ooEUE1dr~foa6BmjVd-unTPCbmWuLSozryQMWZvTwNkoG6ab67samYWc0q2WFyRCAaMbRVblnlRi5HL5WnTzpPHi7hxxZzKFXFo0Mjz7vKfAIAWPzCXxIsAWp6a5AobFtRoS1X5eaubzagk4rHdu6dt5F~ShNgRXG~8zdm6LPDC~hi-4ykQXSIUdFcbKfvgbLLuNXZO90mLEcTINM7XvqYUrqcsa4j49G~JhuyYX~4rK9xAdtNUHtKxBL~kYIgHloR7~INWY6t0tfofOf34uk69gRWe2N6fx6~KQUNqrOlago5g__");
 
@@ -30,14 +25,16 @@
   width: 400px;
   height: 400px;
 }
-.hero-content {
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  justify-content: space-between;
-  color: white;
+.image-style {
+  width: 138px;
+  height: 15px;
+  top: 11.81px;
+  left: 3.17px;
+  padding: 0px 3.62px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
 }
+
 .hero-content div {
   width: 50%;
   height: 300px;
@@ -48,5 +45,12 @@
   text-transform: uppercase;
 }
 .a-tag {
-  background-color: yellow;
+}
+.hero-inside {
+  width: 1116px;
+  height: 42px;
+  top: 24px;
+  left: 154.5px;
+  gap: 0px;
+  opacity: 0px;
 }
