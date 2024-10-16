@@ -3,35 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unread</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>unread | unread today</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body style="margin: 0">
     <header class="hero">
-      <section>
-        <div class="front">
+      <nav class="nav">
+        <section class="section">
           <div class="title">
-            <a class="a-tag" href="http://127.0.0.1:5500/"
+            <a href="http://127.0.0.1:5500/"
               ><img class="image-style" src="unread-image.png"
             /></a>
-            <input class="search" placeholder="Хайх хэсэг" />
+            <input placeholder="Хайх хэсэг" />
           </div>
           <div class="buttons">
-            <span class="button-1">Дараагийн нийтлэл:</span>
-            <span class="button-2">TECHWORM</span>
-            <a class="button-t"> Маргааш орно <span></span></a>
+            <div class="button-1">Дараагийн нийтлэл:</div>
+            <div class="button-2">TECHWORM</div>
+            <div class="button-3">Маргааш орно</div>
           </div>
-        </div>
-      </section>
-      <div>
-        <div class="screen">
-          <div>
-            <img class="hero-img" src="img-sonin.jpeg" alt="" />
+        </section>
+      </nav>
+      <div
+        style="
+          display: flex;
+
+          justify-content: center;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <img class="img-style" src="img-sonin.jpeg" />
+
+        <div class="soninii-title">
+          <h2 style="color: rgba(0, 120, 246, 1); font-size: 14px">Өнөөдөр</h2>
+          <h1 class="ded-title">
+            Сониноос сорчилъё: Тоо юу? Сүлд үү? /2024.10.14/
+          </h1>
+          <div style="display: flex; margin: 0">
+            <img class="logo-style" src="logo.jpeg" />
+            <div>
+              <h3 style="font-size: 17px; color: darkcyan">Tushigt-Erdene</h3>
+              <h4 style="font-size: 12px; color: #ffffff">
+                10 сарын 14, 2024 • 2 мин
+              </h4>
+            </div>
           </div>
-          <div></div>
         </div>
       </div>
     </header>
+    <div>aoj</div>
   </body>
 </html>

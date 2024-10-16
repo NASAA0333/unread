@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 .hero {
   height: 100vh;
   background-color: black;
@@ -6,10 +9,6 @@
   background-size: 100%;
 }
 
-.image-style {
-  width: 138px;
-  height: 15px;
-}
 .buttons {
   display: flex;
   gap: 10px;
@@ -25,7 +24,7 @@
   margin-top: auto;
   color: #ffffff;
 }
-.button-t {
+.button-3 {
   width: 142.68px;
   height: 40px;
   border-radius: 30px;
@@ -36,41 +35,52 @@
   justify-content: center;
   align-items: center;
 }
-.front {
+.title {
+  width: 118px;
+  height: 20px;
+  top: 5px;
+  left: 30px;
+  gap: 0px;
+  opacity: 0px;
+
+  display: flex;
+}
+.image-style {
+  width: 138px;
+  height: 15px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.img-style {
+  width: 446.4px;
+  height: 446.4px;
+  border-radius: 20px;
+}
+.soninii-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section {
   width: 1116px;
   height: 42px;
   display: flex;
   justify-content: space-between;
 }
-.blue-dot {
-  content: "•";
-  color: rgb(0, 120, 246);
-  font-size: 2.2rem;
-  line-height: 1rem;
-  vertical-align: middle;
-  display: inline-block;
-  margin-top: -0.2rem;
+.logo-style {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }
-.hero-img {
-  width: 446.4px;
-  height: 446.4px;
-  border-radius: 20px 0px 0px 0px;
-  border-radius: 20px;
-  background-size: 100%;
+.ded-title {
+  top: 134px;
+  left: 507.39px;
+  font-size: 35px;
+  color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.hero-img-hover {
-  background-size: 120%;
-}
-.screen {
-  width: 1116px;
-  height: 446.4px;
-  top: 121px;
-}
-.title {
-  display: flex;
-  justify-content: center;
-}
-.search {
-  width: 120px;
-  height: 30px;
+.small-title {
 }
