@@ -1,56 +1,76 @@
-.header {
-  height: 100px;
-  background-color: red;
-}
-.head {
-  padding: 24px 0 19px 0;
-  margin: 0;
-  text-decoration: none;
-  background-color: green;
-}
 .hero {
   height: 100vh;
   background-color: black;
-
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
     url("https://s3-alpha-sig.figma.com/img/a719/db31/8544fa3c134093ef9a0961c20a01dfdf?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N~aF6vzpayXVWgB3AgjRFissIaVtSPsQp-VqKq3ooEUE1dr~foa6BmjVd-unTPCbmWuLSozryQMWZvTwNkoG6ab67samYWc0q2WFyRCAaMbRVblnlRi5HL5WnTzpPHi7hxxZzKFXFo0Mjz7vKfAIAWPzCXxIsAWp6a5AobFtRoS1X5eaubzagk4rHdu6dt5F~ShNgRXG~8zdm6LPDC~hi-4ykQXSIUdFcbKfvgbLLuNXZO90mLEcTINM7XvqYUrqcsa4j49G~JhuyYX~4rK9xAdtNUHtKxBL~kYIgHloR7~INWY6t0tfofOf34uk69gRWe2N6fx6~KQUNqrOlago5g__");
-
   background-size: 100%;
 }
-.hero-img {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 180%;
-  width: 400px;
-  height: 400px;
-}
+
 .image-style {
   width: 138px;
   height: 15px;
-  top: 11.81px;
-  left: 3.17px;
-  padding: 0px 3.62px 0px 0px;
-  gap: 0px;
-  opacity: 0px;
 }
-
-.hero-content div {
-  width: 50%;
-  height: 300px;
+.buttons {
+  display: flex;
+  gap: 10px;
 }
-.hero-content h1 {
-  -webkit-text-stroke: 1px white;
-  color: transparent;
-  text-transform: uppercase;
+.button-1 {
+  text-align: center;
+  color: rgba(150, 150, 150);
+  margin-bottom: auto;
+  margin-top: auto;
 }
-.a-tag {
+.button-2 {
+  margin-bottom: auto;
+  margin-top: auto;
+  color: #ffffff;
 }
-.hero-inside {
+.button-t {
+  width: 142.68px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #ffffff80;
+  box-shadow: 4px 4px 50px -4px #d1d1d199;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front {
   width: 1116px;
   height: 42px;
-  top: 24px;
-  left: 154.5px;
-  gap: 0px;
-  opacity: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.blue-dot {
+  content: "•";
+  color: rgb(0, 120, 246);
+  font-size: 2.2rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -0.2rem;
+}
+.hero-img {
+  width: 446.4px;
+  height: 446.4px;
+  border-radius: 20px 0px 0px 0px;
+  border-radius: 20px;
+  background-size: 100%;
+}
+.hero-img-hover {
+  background-size: 120%;
+}
+.screen {
+  width: 1116px;
+  height: 446.4px;
+  top: 121px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  width: 120px;
+  height: 30px;
 }
