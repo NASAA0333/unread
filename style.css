@@ -2,7 +2,7 @@
   margin: 0;
 }
 .hero {
-  height: 100vh;
+  height: 50vh;
   background-color: black;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
     url("https://s3-alpha-sig.figma.com/img/a719/db31/8544fa3c134093ef9a0961c20a01dfdf?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N~aF6vzpayXVWgB3AgjRFissIaVtSPsQp-VqKq3ooEUE1dr~foa6BmjVd-unTPCbmWuLSozryQMWZvTwNkoG6ab67samYWc0q2WFyRCAaMbRVblnlRi5HL5WnTzpPHi7hxxZzKFXFo0Mjz7vKfAIAWPzCXxIsAWp6a5AobFtRoS1X5eaubzagk4rHdu6dt5F~ShNgRXG~8zdm6LPDC~hi-4ykQXSIUdFcbKfvgbLLuNXZO90mLEcTINM7XvqYUrqcsa4j49G~JhuyYX~4rK9xAdtNUHtKxBL~kYIgHloR7~INWY6t0tfofOf34uk69gRWe2N6fx6~KQUNqrOlago5g__");
@@ -49,19 +49,17 @@
   width: 138px;
   height: 15px;
 }
+
 .nav {
   display: flex;
   justify-content: center;
 }
-.img-style {
-  width: 446.4px;
-  height: 446.4px;
-  border-radius: 20px;
-}
+
 .soninii-title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px;
 }
 .section {
   width: 1116px;
@@ -79,8 +77,63 @@
   left: 507.39px;
   font-size: 35px;
   color: #ffffff;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 500px;
 }
 .small-title {
+}
+.image {
+  width: 450px;
+  height: 450px;
+
+  transition: all 1s;
+}
+.image:hover {
+  scale: 1.1;
+}
+.black-box {
+  background-color: black;
+  display: flex;
+  height: 327px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-contr {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.medushtei-style {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  margin: 7px 0 0 0;
+}
+.unuudur-style {
+  animation: linear;
+}
+.comment-box {
+  background-color: aqua;
+  width: 739px;
+  height: 236px;
+  gap: 13px;
+}
+.box-right {
+  align-self: flex-end;
+}
+.all-comment-box {
+  width: 1116px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+.images {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  overflow: hidden;
 }
