@@ -85,17 +85,21 @@
   width: 450px;
   height: 450px;
 
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .image:hover {
   scale: 1.1;
 }
-.black-box {
-  background-color: black;
+.big-box {
   display: flex;
+  justify-content: center;
   height: 327px;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  background-color: black;
+}
+.black-box {
+  display: flex;
+  gap: 20px;
 }
 .img-contr {
   width: 450px;
@@ -131,9 +135,95 @@
   margin-left: auto;
   margin-right: auto;
 }
-.images {
+.image1 {
   width: 244px;
   height: 360px;
   display: flex;
-  overflow: hidden;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-1.jpg);
+  background-size: 250%;
+  background-position: center;
+  background-size: 250%;
+  background-position: center;
+}
+.image2 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-2.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+.image3 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-3.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+.image4 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-4.jpg);
+  background-size: 270%;
+  background-position: center;
+}
+.image5 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-5.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+.image6 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-6.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+.image7 {
+  width: 244px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  transition: all 0.5s;
+  border-radius: 9px;
+  background-image: url(image-7.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+.images:hover {
+  scale: 1.1;
+}
+.gap {
+  height: 100px;
+}
+.last-box {
+  background-color: black;
+  height: 750px;
+}
+.boxs-title {
+  color: #ffffff;
 }
