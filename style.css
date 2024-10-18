@@ -79,15 +79,12 @@
   color: #ffffff;
   width: 500px;
 }
-.small-title {
-}
 .image {
   width: 450px;
   height: 450px;
-
   transition: all 0.5s;
 }
-.image:hover {
+.images:hover {
   scale: 1.1;
 }
 .big-box {
@@ -118,23 +115,7 @@
 .unuudur-style {
   animation: linear;
 }
-.comment-box {
-  background-color: aqua;
-  width: 739px;
-  height: 236px;
-  gap: 13px;
-}
-.box-right {
-  align-self: flex-end;
-}
-.all-comment-box {
-  width: 1116px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .image1 {
   width: 244px;
   height: 360px;
@@ -143,8 +124,6 @@
   transition: all 0.5s;
   border-radius: 9px;
   background-image: url(image-1.jpg);
-  background-size: 250%;
-  background-position: center;
   background-size: 250%;
   background-position: center;
 }
@@ -214,8 +193,48 @@
   background-size: 250%;
   background-position: center;
 }
-.images:hover {
-  scale: 1.1;
+.all-comment-box {
+  max-width: 1116px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.comment-box {
+  background-color: aquamarine;
+  max-width: 739px;
+  height: 236px;
+  font-size: 18px;
+  border-radius: 0 27px 27px 27px;
+}
+.box-right {
+  align-self: flex-end;
+}
+.boxs-image {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-image: url(boxs-image1.jpeg);
+  background-size: 100%;
+}
+.reporter-name {
+  color: black;
+}
+.date {
+  color: black;
+}
+.report-title {
+  color: blue;
+  font-size: 20px;
+}
+.short-report {
+  font-size: 30px;
+}
+.report-box {
+  max-width: 739px;
+  min-height: 183px;
 }
 .gap {
   height: 100px;
