@@ -8,7 +8,6 @@
     url("https://s3-alpha-sig.figma.com/img/a719/db31/8544fa3c134093ef9a0961c20a01dfdf?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N~aF6vzpayXVWgB3AgjRFissIaVtSPsQp-VqKq3ooEUE1dr~foa6BmjVd-unTPCbmWuLSozryQMWZvTwNkoG6ab67samYWc0q2WFyRCAaMbRVblnlRi5HL5WnTzpPHi7hxxZzKFXFo0Mjz7vKfAIAWPzCXxIsAWp6a5AobFtRoS1X5eaubzagk4rHdu6dt5F~ShNgRXG~8zdm6LPDC~hi-4ykQXSIUdFcbKfvgbLLuNXZO90mLEcTINM7XvqYUrqcsa4j49G~JhuyYX~4rK9xAdtNUHtKxBL~kYIgHloR7~INWY6t0tfofOf34uk69gRWe2N6fx6~KQUNqrOlago5g__");
   background-size: 100%;
 }
-
 .buttons {
   display: flex;
   gap: 10px;
@@ -49,12 +48,10 @@
   width: 138px;
   height: 15px;
 }
-
 .nav {
   display: flex;
   justify-content: center;
 }
-
 .soninii-title {
   display: flex;
   flex-direction: column;
@@ -115,7 +112,6 @@
 .unuudur-style {
   animation: linear;
 }
-
 .image1 {
   width: 244px;
   height: 360px;
@@ -203,14 +199,16 @@
   justify-content: center;
 }
 .comment-box {
-  background-color: aquamarine;
+  background-color: #ffffff;
   max-width: 739px;
   height: 236px;
   font-size: 18px;
   border-radius: 0 27px 27px 27px;
+  padding: 50px 50px 50px 50px;
 }
 .box-right {
   align-self: flex-end;
+  justify-content: end;
 }
 .boxs-image {
   height: 46px;
@@ -245,4 +243,43 @@
 }
 .boxs-title {
   color: #ffffff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px 150px 200px;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  max-width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item6 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.box-images {
+  width: 135px;
+  height: 135px;
+  border-radius: 50px;
 }
