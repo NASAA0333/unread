@@ -201,7 +201,7 @@
 .comment-box {
   background-color: #ffffff;
   max-width: 739px;
-  height: 236px;
+  min-height: 136px;
   font-size: 18px;
   border-radius: 0 27px 27px 27px;
   padding: 50px 50px 50px 50px;
@@ -232,7 +232,6 @@
 }
 .report-box {
   max-width: 739px;
-  min-height: 183px;
 }
 .gap {
   height: 100px;
