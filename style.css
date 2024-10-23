@@ -81,7 +81,7 @@
   height: 450px;
   transition: all 0.5s;
 }
-.images:hover {
+.image:hover {
   scale: 1.1;
 }
 .big-box {
@@ -363,6 +363,21 @@
   border-radius: 18px;
   background-size: 100%;
 }
+.item1 :hover {
+  background-size: 120%;
+}
+.item2 :hover {
+}
+.item3 :hover {
+}
+.item4 :hover {
+}
+.item5 :hover {
+}
+.item6 :hover {
+}
+.item7 :hover {
+}
 .footer {
   width: 1116px;
   margin-left: auto;
@@ -436,6 +451,11 @@
 .corner-title {
   color: gray;
   font-size: 12px;
+  transition: all 1s;
+  scale: 1;
+}
+.corner-title :hover {
+  scale: 1.1;
 }
 .all-corners-box {
   flex-direction: column;
@@ -471,4 +491,8 @@
   height: 54px;
   border-radius: 50%;
   background-color: black;
+  color: #ffffff;
+  align-content: center;
+  text-align: center;
+  font-size: 100px;
 }
