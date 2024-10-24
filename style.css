@@ -83,6 +83,19 @@
 }
 .image:hover {
   scale: 1.1;
+  color: #ffffff;
+}
+.hover {
+  transition: all 0.5s;
+}
+.hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.hover1 {
+  transition: all 0.5s;
+}
+.hover1:hover {
+  transform: translateY(-10px);
 }
 .big-box {
   display: flex;
@@ -188,6 +201,13 @@
   background-image: url(image-7.jpg);
   background-size: 250%;
   background-position: center;
+}
+.second-images {
+  margin: 12px;
+  transition: all 0.5s;
+}
+.second-images:hover {
+  scale: 1.1;
 }
 .all-comment-box {
   max-width: 1116px;
@@ -321,22 +341,21 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(gird-image-1.jpeg);
+  background-image: url(gird-image-1.jpg);
   border-radius: 18px;
-  background-size: 100%;
 }
 .item2 {
-  background-image: url(gird-image-2.jpeg);
+  background-image: url(gird-image-2.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
 .item3 {
-  background-image: url(gird-image-3.jpeg);
+  background-image: url(gird-image-3.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
 .item4 {
-  background-image: url(gird-image-4.jpeg);
+  background-image: url(gird-image-4.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
@@ -345,7 +364,7 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
-  background-image: url(gird-image-5.jpeg);
+  background-image: url(gird-image-5.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
@@ -354,29 +373,16 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 4;
-  background-image: url(gird-image-6.jpeg);
+  background-image: url(gird-image-6.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
 .item7 {
-  background-image: url(gird-image-7.jpeg);
+  background-image: url(gird-image-7.jpg);
   border-radius: 18px;
   background-size: 100%;
 }
-.item1 :hover {
-  background-size: 120%;
-}
-.item2 :hover {
-}
-.item3 :hover {
-}
-.item4 :hover {
-}
-.item5 :hover {
-}
-.item6 :hover {
-}
-.item7 :hover {
+.texts {
 }
 .footer {
   width: 1116px;
@@ -447,15 +453,21 @@
 .footer-corner-title {
   font-size: 15px;
   color: blue;
+  transition: all 0.5s;
+}
+.footer-corner-title:hover {
+  transform: translateX(17px);
+  color: rgb(59, 59, 219);
 }
 .corner-title {
   color: gray;
   font-size: 12px;
-  transition: all 1s;
-  scale: 1;
+  transition: all 0.5s;
+  display: flex;
 }
-.corner-title :hover {
-  scale: 1.1;
+.corner-title:hover {
+  transform: translateX(14px);
+  color: #ffffff;
 }
 .all-corners-box {
   flex-direction: column;
