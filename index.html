@@ -3,330 +3,592 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>unread | unread today</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="https://unread.today/img/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Нүүр | Unread Today</title>
   </head>
-  <body
-    style="margin: 0; background-color: whitesmoke; justify-content: center"
-  >
-    <header class="hero">
-      <nav style="display: flex; justify-content: center">
-        <div class="nav">
-          <svg
-            width="30px"
-            height="30px"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z"
-              fill="whitesmoke"
-            />
-            <path
-              d="M4 13.9998C4 13.4475 4.44772 12.9997 5 12.9997L16 13C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15L5 14.9998C4.44772 14.9998 4 14.552 4 13.9998Z"
-              fill="whitesmoke"
-            />
-            <path
-              d="M5 19.9998C4.44772 19.9998 4 20.4475 4 20.9998C4 21.552 4.44772 21.9997 5 21.9997H22C22.5523 21.9997 23 21.552 23 20.9998C23 20.4475 22.5523 19.9998 22 19.9998H5Z"
-              fill="#ffffff"
-            />
-          </svg>
-          <div class="title">
-            <a href="http://127.0.0.1:5500/"
-              ><img class="image-style" src="unread-image.png"
-            /></a>
-            <input placeholder="Хайх хэсэг" />
-          </div>
-
-          <div class="buttons">
-            <div class="button-1">Дараагийн нийтлэл:</div>
-            <div class="button-2">TECHWORM</div>
-            <div class="button-3">Маргааш орно</div>
-          </div>
-        </div>
-      </nav>
-      <div style="display: flex; justify-content: center; display: flex">
-        <div class="img-contr">
-          <img class="image" src="img-sonin.jpeg" />
-        </div>
-
-        <div class="soninii-title">
-          <h2
-            class="unuudur-style"
-            style="color: rgba(0, 120, 246, 1); font-size: 14px"
-          >
-            Өнөөдөр
-          </h2>
-          <h1 class="medushtei-style">Мэдүүштэй</h1>
-          <h1 class="ded-title">
-            Сониноос сорчилъё: Тоо юу? Сүлд үү? /2024.10.14/
-          </h1>
-          <div style="display: flex; margin: 0">
-            <img class="logo-style" src="logo.jpeg" />
-            <div>
-              <h3 style="font-size: 17px; color: darkcyan">Tushigt-Erdene</h3>
-              <h4 style="font-size: 12px; color: #ffffff">
-                10 сарын 14, 2024 • 2 мин
-              </h4>
+  <body>
+    <header>
+      <div class="header">
+        <span class="fa fa-align-left" id="bar-icon"></span>
+        <div class="mid-nav">
+          <div class="left-nav">
+            <img src="zuragnuud/logo.png" class="logo" />
+            <p>|</p>
+            <div style="display: flex">
+              <span class="fa fa-search" id="search"></span>
+              <input placeholder="Хайлт хийх" id="search-input" />
             </div>
           </div>
+          <div class="right-nav">
+            <p>Дараагийн нийтлэл:</p>
+            <div
+              class="category"
+              style="background-color: transparent; font-size: 20px"
+            >
+              techworm
+            </div>
+            <div class="live">
+              Маргааш орно
+              <div class="liveDot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="social-icons">
+          <span class="fa fa-facebook-official"></span>
+          <div class="cropped-image">
+            <i class="fa fa-instagram" style="color: transparent"></i>
+          </div>
+          <span class="fa fa-twitter"></span>
+          <span class="fa fa-linkedin"></span>
         </div>
       </div>
     </header>
-
-    <div class="big-box">
-      <div class="black-box">
-        <div style="display: flex">
-          <div class="second-images image1"><h1 class="texts"></h1></div>
-          <div class="second-images image2"><h1 class="texts"></h1></div>
-          <div class="second-images image3"><h1 class="texts"></h1></div>
-          <div class="second-images image4"><h1 class="texts"></h1></div>
-          <div class="second-images image5"><h1 class="texts"></h1></div>
-          <div class="second-images image6"><h1 class="texts"></h1></div>
-          <div class="second-images image7"><h1 class="texts"></h1></div>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-img">
+          <img src="zuragnuud/heroImg.jpeg" />
+        </div>
+        <div class="hero-text">
+          <h5>Өнөөдөр</h5>
+          <div class="hero-type">Мэдүүштэй</div>
+          <h1 class="medium-titles">
+            Сониноос сорчилъё: Тоо юу? Сүлд үү? /2024.10.14/
+          </h1>
+          <div class="account">
+            <div class="accImg">
+              <img src="zuragnuud/accImg.jpeg" />
+            </div>
+            <div>
+              <div class="account-name">Tushigt-Erdene</div>
+              <div class="account-date">
+                10 сарын 14, 2024
+                <div class="liveDot" style="background-color: white"></div>
+                2 мин
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="gap"></div>
-
-    <section class="articles">
-      <div class="all-comment-box">
-        <article class="hover1">
-          <div style="display: flex; background-color: whitesmoke">
-            <div class="report-logo-image-1"></div>
-            <div>
-              <div class="reporter-name">Tushigt-Erdene</div>
-              <div class="date">10 сарын 17, 2024</div>
-            </div>
-          </div>
-          <div class="comment-box hover">
-            <div class="report-box">
-              <h2 class="report-title">Techworm</h2>
-              <h2 class="short-report">
-                Kindle-үүд шинэчлэгдэв: Анхны өнгөт Kindle + Дэвтэр мэт Kindle
-              </h2>
-            </div>
-            <img class="box-images" src="box-image1.jpg" alt="" />
-          </div>
-        </article>
-
-        <article class="box-right hover1">
-          <div style="display: flex; align-items: end; justify-content: end">
-            <div class="report-logo-image-2"></div>
-            <div>
-              <div class="reporter-name">Tushigt-Erdene</div>
-              <div class="date">10 сарын 17, 2024</div>
-            </div>
-          </div>
-          <div class="comment-box box-right hover">
-            <div class="report-box">
-              <h2 class="report-title">Techworm</h2>
-              <h2 class="short-report">
-                Kindle-үүд шинэчлэгдэв: Анхны өнгөт Kindle + Дэвтэр мэт Kindle
-              </h2>
-            </div>
-            <img class="box-images" src="box-image2.jpg" alt="" />
-          </div>
-        </article>
-
-        <article class="hover1">
-          <div style="display: flex">
-            <div class="report-logo-image-3"></div>
-            <div>
-              <div class="reporter-name">Tushigt-Erdene</div>
-              <div class="date">10 сарын 17, 2024</div>
-            </div>
-          </div>
-          <div class="comment-box hover">
-            <div class="report-box">
-              <h2 class="report-title">Techworm</h2>
-              <h2 class="short-report">
-                Kindle-үүд шинэчлэгдэв: Анхны өнгөт Kindle + Дэвтэр мэт Kindle
-              </h2>
-            </div>
-            <img class="box-images" src="box-image3.jpg" alt="" />
-          </div>
-        </article>
-
-        <article class="box-right hover1">
-          <div style="display: flex; align-items: end; justify-content: end">
-            <div class="report-logo-image-4"></div>
-            <div>
-              <div class="reporter-name">Tushigt-Erdene</div>
-              <div class="date">10 сарын 17, 2024</div>
-            </div>
-          </div>
-          <div class="comment-box box-right hover">
-            <div class="report-box">
-              <h2 class="report-title">Techworm</h2>
-              <h2 class="short-report">
-                Kindle-үүд шинэчлэгдэв: Анхны өнгөт Kindle + Дэвтэр мэт Kindle
-              </h2>
-            </div>
-            <img class="box-images" src="box-image4.jpg" alt="" />
-          </div>
-        </article>
-
-        <article class="hover1">
-          <div style="display: flex">
-            <div class="report-logo-image-5"></div>
-            <div>
-              <div class="reporter-name">Tushigt-Erdene</div>
-              <div class="date">10 сарын 17, 2024</div>
-            </div>
-          </div>
-          <div class="comment-box ; hover">
-            <div class="report-box">
-              <h2 class="report-title">Techworm</h2>
-              <h2 class="short-report">
-                Kindle-үүд шинэчлэгдэв: Анхны өнгөт Kindle + Дэвтэр мэт Kindle
-              </h2>
-            </div>
-            <img class="box-images" src="box-image5.jpg" alt="" />
-          </div>
-        </article>
+    <div class="scroll-background">
+      <div class="editors-choice">
+        <p>Редакцын сонголт</p>
+        <div class="pre-and-next">
+          <span class="fa fa-angle-left"></span>
+          <span class="fa fa-angle-right"></span>
+        </div>
       </div>
-    </section>
-    <div>
-      <div style="margin-left: auto; margin-right: auto">
-        <div class="old-weeks">
-          <div class="old-week">
-            <div class="old-week-inside">Өнгөрсөн 7 хоногт</div>
+      <div class="slider-container">
+        <div class="slider">
+          <div
+            class="Item"
+            style="
+              background: linear-gradient(rgba(0, 0, 0, 0) -10%, #000000 150%),
+                url(zuragnuud/item1.jpeg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div class="item-header">
+              <div class="liveDot"></div>
+              <p>1 мин</p>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="fa fa-eye"></span>3525<span
+                  class="fa fa-comment"
+                ></span
+                >0
+              </div>
+              <h2>Гэрэл зурагчин Макс Мюнх</h2>
+              <div class="category">Би хэрхэн ажилладаг вэ?</div>
+            </div>
           </div>
-          <div class="old-week">
-            <div class="old-week-inside">09/30 - 10/06</div>
+          <div
+            class="Item"
+            style="
+              background: linear-gradient(rgba(0, 0, 0, 0) -10%, #000000 150%),
+                url(zuragnuud/item2.jpeg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div class="item-header">
+              <div class="liveDot"></div>
+              <p>8 мин</p>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="fa fa-eye"></span>10153<span
+                  class="fa fa-comment"
+                ></span
+                >0
+              </div>
+              <h2>
+                Гадаад хэл сурахад нас оройтдог уу? + Шинжлэх ухааны 5 баримт
+              </h2>
+              <div class="category">Мэдүүштэй</div>
+            </div>
           </div>
-          <div class="old-week">
-            <div class="old-week-inside">09/23 - 09/29</div>
+          <div
+            class="Item"
+            style="
+              background: linear-gradient(rgba(0, 0, 0, 0) -10%, #000000 150%),
+                url(zuragnuud/item3.jpeg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div class="item-header">
+              <div class="liveDot"></div>
+              <p>2 мин</p>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="fa fa-eye"></span>5677<span
+                  class="fa fa-comment"
+                ></span
+                >0
+              </div>
+              <h2>Биднийг унтаж байхад Meta-гийн танилцуулсан бүх зүйл</h2>
+              <div class="category">techworm</div>
+            </div>
           </div>
-          <div class="old-week">
-            <div class="old-week-inside">09/16 - 09/22</div>
+          <div
+            class="Item"
+            style="
+              background: linear-gradient(rgba(0, 0, 0, 0) -10%, #000000 150%),
+                url(zuragnuud/item4.jpeg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div class="item-header">
+              <div class="liveDot"></div>
+              <p>3 мин</p>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="fa fa-eye"></span>2947<span
+                  class="fa fa-comment"
+                ></span
+                >0
+              </div>
+              <h2>Сониноос сорчилъё: УЛААН vs БААТАР /2024.09.23/</h2>
+              <div class="category">Мэдүүштэй</div>
+            </div>
+          </div>
+          <div
+            class="Item"
+            style="
+              background: linear-gradient(rgba(0, 0, 0, 0) -10%, #000000 150%),
+                url(zuragnuud/item5.jpeg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div class="item-header">
+              <div class="liveDot"></div>
+              <p>6 мин</p>
+            </div>
+            <div class="item-content">
+              <div>
+                <span class="fa fa-eye"></span>19407<span
+                  class="fa fa-comment"
+                ></span
+                >0
+              </div>
+              <h2>Яг одоо туршаад үз: iOS 18-аас онцлох 18 өөрчлөлт</h2>
+              <div class="category">techworm</div>
+            </div>
           </div>
         </div>
-        <div class="line"></div>
       </div>
     </div>
-
-    <div>
-      <div class="grid-container">
-        <div class="item1 hover hover1"></div>
-        <div class="item2 hover hover1"></div>
-        <div class="item3 hover hover1"></div>
-        <div class="item4 hover hover1"></div>
-        <div class="item5 hover hover1"></div>
-        <div class="item6 hover hover1"></div>
-        <div class="item7 hover hover1"></div>
-      </div>
-      <div class="grid-container">
-        <div class="item1 hover hover1"></div>
-        <div class="item2 hover hover1"></div>
-        <div class="item3 hover hover1"></div>
-        <div class="item4 hover hover1"></div>
-        <div class="item5 hover hover1"></div>
-        <div class="item6 hover hover1"></div>
-        <div class="item7 hover hover1"></div>
-      </div>
-    </div>
-    <footer class="last-box">
-      <div class="footer">
-        <div class="footer-inside">
-          <div class="footer-left-box">
-            <div class="unread-logo"></div>
-            <div class="footer-box">
-              <div>
-                <div class="corner-title">Хамтран ажиллах хүсэлт илгээх</div>
-                <div class="footer-box-inside">Контент нийтлүүлэх</div>
+    <main>
+      <div class="main">
+        <div class="content-item-left">
+          <div class="account">
+            <img src="zuragnuud/profile1.jpeg" class="accImg" />
+            <div>
+              <div class="account-name" style="color: black">Purevdorj</div>
+              <div class="account-date" style="color: var(--text-gray)">
+                10 сарын 14, 2024
+                <div
+                  class="liveDot"
+                  style="background-color: var(--text-gray)"
+                ></div>
+                4 мин
               </div>
-              <div
-                class="footer-circle fa fa-angle-right"
-                style="font-size: 25px"
-              ></div>
-            </div>
-
-            <div class="footer-box">
-              <div>
-                <div class="corner-title">Хамтран ажиллах хүсэлт илгээх</div>
-                <div class="footer-box-inside">Эвент дээр хамтрах</div>
-              </div>
-              <div
-                class="footer-circle fa fa-angle-right"
-                style="font-size: 25px"
-              ></div>
-            </div>
-            <div style="display: flex">
-              <div><img class="apps" src="googleplay.png" alt="" /></div>
-              <div><img class="apps" src="appstore.png" alt="" /></div>
             </div>
           </div>
-          <div class="footer-rigth-box">
-            <div class="footer-titles">
-              <h3>Редакцын бодлого</h3>
-              <h3>•</h3>
-              <h3>Блог</h3>
-              <h3>•</h3>
-              <h3>Ажлын байр</h3>
-              <h3>•</h3>
-              <h3>Холбогдох</h3>
+          <div class="content-item-main">
+            <div class="liveDot" style="margin-top: 4px"></div>
+            <div style="margin-left: 10px; flex: 1">
+              <div class="content-item-category">Мэдүүштэй</div>
+              <h1 class="medium-titles">10 тоонд: Нобелийн шагнал</h1>
             </div>
+            <img src="zuragnuud/main1.jpeg" class="main-img" />
+          </div>
+        </div>
+        <div class="content-item-right">
+          <div class="account">
+            <img src="zuragnuud/zuraglaac.png" class="accImg" />
             <div>
-              <div class="footer-warning">
-                <div style="height: 26px">
-                  © 2015-2024 Анрид Медиа ХХК. Бүх эрх хуулиар хамгаалагдсан.
-                  Контентуудыг зөвшөөрөлгүйгээр болон дурдалгүйгээр нийтлэх,
-                  хэвлэх, эш татахыг хориглоно.
+              <div class="account-name" style="color: black">
+                Cerelchimeg Jargalsaikhan
+              </div>
+              <div class="account-date" style="color: var(--text-gray)">
+                10 сарын 14, 2024
+                <div
+                  class="liveDot"
+                  style="background-color: var(--text-gray)"
+                ></div>
+                10 мин
+              </div>
+            </div>
+          </div>
+          <div class="content-item-main">
+            <div class="liveDot" style="margin-top: 4px"></div>
+            <div style="margin-left: 10px; flex: 1">
+              <div class="content-item-category">Мэдүүштэй</div>
+              <h1 class="medium-titles">Нобель 2024-ийн эзэд: ХЭН? ЯАГААД?</h1>
+            </div>
+            <img src="zuragnuud/nobel.png" class="main-img" />
+          </div>
+        </div>
+        <div class="content-item-left">
+          <div class="account">
+            <img src="zuragnuud/undral.png" class="accImg" />
+            <div>
+              <div class="account-name" style="color: black">
+                Undral Amarsaikhan
+              </div>
+              <div class="account-date" style="color: var(--text-gray)">
+                10 сарын 14, 2024
+                <div
+                  class="liveDot"
+                  style="background-color: var(--text-gray)"
+                ></div>
+                8 мин
+              </div>
+            </div>
+          </div>
+          <div class="content-item-main">
+            <div class="liveDot" style="margin-top: 4px"></div>
+            <div style="margin-left: 10px; flex: 1">
+              <div class="content-item-category">Мэдүүштэй</div>
+              <h1 class="medium-titles">
+                Орон нутгийн сонгуулиас онцлох 24 зүйл
+              </h1>
+            </div>
+            <img src="zuragnuud/iht2024.png" class="main-img" />
+          </div>
+        </div>
+        <div class="content-item-right">
+          <div class="account">
+            <img src="zuragnuud/accImg.jpeg" class="accImg" />
+            <div>
+              <div class="account-name" style="color: black">
+                Tushigt-Erdene
+              </div>
+              <div class="account-date" style="color: var(--text-gray)">
+                10 сарын 14, 2024
+                <div
+                  class="liveDot"
+                  style="background-color: var(--text-gray)"
+                ></div>
+                3 мин
+              </div>
+            </div>
+          </div>
+          <div class="content-item-main">
+            <div class="liveDot" style="margin-top: 4px"></div>
+            <div style="margin-left: 10px; flex: 1">
+              <div class="content-item-category">Techworm</div>
+              <h1 class="medium-titles">
+                Биднийг сонгуульдаж байхад Tesla-гийн танилцуулсан бүх зүйл
+              </h1>
+            </div>
+            <img src="zuragnuud/tesla.png" class="main-img" />
+          </div>
+        </div>
+        <div class="content-item-left">
+          <div class="account">
+            <img src="zuragnuud/zuraglaac.png" class="accImg" />
+            <div>
+              <div class="account-name" style="color: black">
+                Gerelchimeg Jargalsaikhan
+              </div>
+              <div class="account-date" style="color: var(--text-gray)">
+                10 сарын 14, 2024
+                <div
+                  class="liveDot"
+                  style="background-color: var(--text-gray)"
+                ></div>
+                6 мин
+              </div>
+            </div>
+          </div>
+          <div class="content-item-main">
+            <div class="liveDot" style="margin-top: 4px"></div>
+            <div style="margin-left: 10px; flex: 1">
+              <div class="content-item-category">Би хэрхэн ажилладаг вэ?</div>
+              <h1 class="medium-titles">
+                CERN-ий судлаач доктор Б.Баасансүрэн
+              </h1>
+            </div>
+            <img src="zuragnuud/sern.png" class="main-img" />
+          </div>
+        </div>
+        <div class="info-selector">
+          <div class="dates">Өнгөрсөн 7 хоногт</div>
+          <div class="dates">09/30 - 10/06</div>
+          <div class="dates">09/23 - 09/29</div>
+          <div class="dates">09/16 - 09/22</div>
+        </div>
+        <div class="contents">
+          <div
+            class="content"
+            style="
+              grid-row: 1/3;
+              grid-column: 1/3;
+              background-image: url(zuragnuud/1.png);
+            "
+          >
+            <div class="content-title">
+              <div class="content-category">Номын тухай</div>
+              Утга зохиолын Нобелийн шагналтнуудын <br />бүтээлээс унших ёстой
+              10 ном
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/2.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              Нобелийн шагналтнуудын анхаарал татам дадлууд
+              <div class="content-timer">8 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/3.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Зочинтой булан</div>
+              Загвар зохион бүтээгч Jezel-ийн журнал
+              <div class="content-timer">7 мин</div>
+            </div>
+          </div>
+          <div
+            class="content"
+            style="grid-row: 2/4; background-image: url(zuragnuud/4.jpeg)"
+          >
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              Зөвхөн оюутнуудад: Дотоодын тэтгэлэгт
+              <div class="content-timer">6 мин</div>
+            </div>
+          </div>
+          <div
+            class="content"
+            style="grid-row: 2/4; background-image: url(zuragnuud/5.jpeg)"
+          >
+            <div class="content-title">
+              <div class="content-category">Би хэрхэн ажилладаг вэ?</div>
+              Стора Централ ХХК-ийн хамт олон
+              <div class="content-timer">11 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/6.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              Тоёота - Техникийн сургалтын хөтөлбөрийн
+              <div class="content-timer">5 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/7.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              Deadline-ийг хэрхэн өөрт ашигтайгаар эргүүлэх в...
+              <div class="content-timer">7 мин</div>
+            </div>
+          </div>
+        </div>
+        <div class="contents">
+          <div
+            class="content"
+            style="
+              grid-row: 1/3;
+              grid-column: 1/3;
+              background-image: url(zuragnuud/1.png);
+            "
+          >
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              Утга зохиолын Нобелийн шагналтнуудын <br />бүтээлээс унших ёстой
+              10 ном
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/2.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/3.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div
+            class="content"
+            style="grid-row: 2/4; background-image: url(zuragnuud/4.jpeg)"
+          >
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div
+            class="content"
+            style="grid-row: 2/4; background-image: url(zuragnuud/5.jpeg)"
+          >
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/6.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+          <div class="content" style="background-image: url(zuragnuud/7.jpeg)">
+            <div class="content-title">
+              <div class="content-category">Мэдүүштэй</div>
+              dfg
+              <div class="content-timer">12 мин</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main-bottom"></div>
+      <div class="footer-contents">
+        <div>
+          <div>
+            <img src="zuragnuud/logo.png" class="logo" />
+          </div>
+          <div class="requests">
+            <div class="request">
+              <div class="textandbutton">
+                <div class="request-text">
+                  <h6>Хамтран ажиллах хүсэлт илгээх</h6>
+                  Контент нийтлүүлэх
+                </div>
+                <div class="circle-button-border">
+                  <div class="circle-button">
+                    <span class="fa fa-angle-right"></span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div style="display: flex">
-              <div class="all-corners-box">
-                <h1 class="footer-corner-title">Булангууд</h1>
-                <div class="corner-title">Онцлох бизнес</div>
-                <div class="corner-title">Techworm</div>
-                <div class="corner-title">Би хэрхэн ажилладаг вэ?</div>
-                <div class="corner-title">Мэдүүштэй</div>
-                <div class="corner-title">Чөлөөт</div>
-                <div class="corner-title">Номын тухай</div>
-                <div class="corner-title">7 хоногийн тойм</div>
-                <div class="corner-title">Өртөөлөгчид</div>
-              </div>
-              <div class="all-corners-box">
-                <div class="corner-title">Тогтвортой хөгжил</div>
-                <div class="corner-title">Тайлбарлах нь</div>
-                <div class="corner-title">10 ертөнц, 10 өнцөг</div>
-                <div class="corner-title">Таатай оффис</div>
-                <div class="corner-title">Зочинтой булан</div>
-                <div class="corner-title">8 минутын улс төр</div>
-                <div class="corner-title">English</div>
-              </div>
-              <div class="all-corners-box">
-                <div class="footer-corner-title">Компани</div>
-                <div>
-                  <div class="corner-title">Улаанбаатар 14240</div>
-                  <div class="corner-title">СБД, 8-р хороо, Амарын</div>
-                  <div class="corner-title">гудамж,</div>
-                  <div class="corner-title">Тэнгэрлиг медиа групп</div>
+            <div class="request">
+              <div class="textandbutton">
+                <div class="request-text">
+                  <h6>Хамтран ажиллах хүсэлт илгээх</h6>
+                  Эвент дээр хамтрах
                 </div>
-                <div class="corner-title">+976 9921 2778</div>
-                <div class="corner-title">+976 8801 3893</div>
-                <div class="corner-title">Зочлох:</div>
-                <div class="corner-link">www.unread.media</div>
+                <div class="circle-button-border">
+                  <div class="circle-button">
+                    <span class="fa fa-angle-right"></span>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="stores">
+              <img src="zuragnuud/playStore.png" alt="" />
+              <img src="zuragnuud/appStore.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="all-apps">
-          <div class="fa fa-facebook-square all-apps"></div>
-          <div class="fa fa-twitter all-apps"></div>
-          <div class="fa fa-instagram all-apps"></div>
-          <div class="fa fa-linkedin all-apps"></div>
-          <div class="fa fa-youtube-play all-apps"></div>
-          <div class="fa fa-soundcloud all-apps"></div>
+        <div class="footer-right">
+          <div class="footer-title">
+            Редакцын бодлого
+            <div class="liveDot" style="background-color: white"></div>
+            Блог
+            <div class="liveDot" style="background-color: white"></div>
+            Ажлын байр
+            <div class="liveDot" style="background-color: white"></div>
+            Холбогдох
+          </div>
+          <div class="copyright">
+            © 2015-2024 Анрид Медиа ХХК. Бүх эрх хуулиар хамгаалагдсан.
+            Контентуудыг зөвшөөрөлгүйгээр болон дурдалгүйгээр нийтлэх, хэвлэх,
+            эш татахыг хориглоно.
+          </div>
+          <div class="three-columns">
+            <div class="column-title">Булангууд</div>
+            <div></div>
+            <div class="column-title">Компани</div>
+            <div class="footer-category">Онцлох бизнес</div>
+            <div class="footer-category">Тогтвортой хөгжил</div>
+            <div style="grid-column: 3/4; grid-row: 2/4">
+              Улаанбаатар 14240 СБД, 8-р хороо, Амарын гудамж,
+            </div>
+            <div class="footer-category">Techworm</div>
+            <div class="footer-category">Тайлбарлах нь</div>
+            <div class="footer-category">Би хэрхэн ажилладаг вэ?</div>
+            <div class="footer-category">10 ертөнц, 10 өнцөг</div>
+            <div>Тэнгэрлиг медиа групп</div>
+            <div class="footer-category">Мэдүүштэй</div>
+            <div class="footer-category">Таатай оффис</div>
+            <div>+976 9921 2778</div>
+            <div class="footer-category">Чөлөөт</div>
+            <div class="footer-category">Зочинтой булан</div>
+            <div>+976 8801 3893</div>
+            <div class="footer-category">Номын тухай</div>
+            <div class="footer-category">8 минутын улс төр</div>
+            <div></div>
+            <div class="footer-category">7 хоногийн тойм</div>
+            <div>English</div>
+            <div>Зочлох</div>
+            <div class="footer-category">Өртөөлөгчид</div>
+            <div></div>
+            <div style="color: white">www.unread.media</div>
+          </div>
         </div>
+      </div>
+      <div class="footer-icons">
+        <span class="fa fa-facebook-official"></span>
+        <span class="fa fa-twitter"></span>
+        <div class="cropped-image">
+          <i
+            class="fa fa-instagram"
+            style="font-size: 40px; color: transparent"
+          ></i>
+        </div>
+        <span class="fa fa-linkedin"></span>
+        <span class="fa fa-youtube-play"></span>
+        <span class="fa fa-soundcloud"></span>
       </div>
     </footer>
   </body>
